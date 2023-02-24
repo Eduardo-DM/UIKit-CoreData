@@ -2,6 +2,8 @@
 
 Recreate the CRUD cycle for an entity that represents the basic data for a board game in the context of an app which goal is be a library for this kind of products.
 
+Now, it's only ready the full flow for Create operation.
+
 ### UIKit
 
 UIKit is the framework for the UI. Some cool solutions are implemented such us:

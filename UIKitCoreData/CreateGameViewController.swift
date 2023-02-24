@@ -92,7 +92,6 @@ class CreateGameViewController: UIViewController, UITextFieldDelegate, ReusableP
             }
         }
         catch (ErrorModelLogic.Game.noTitle){
-            //present(UIAlertController.showAlertOkNothing(title: "Error creating game", message: "You must enter the title of the game, it is a mandatory field."), animated: true, completion: nil)
             present(UIAlertController.showAlertOneButtonWithAction(title: "Error creating game",
                                                                    message: "You must enter the title of the game, it is a mandatory field.",
                                                                    descriptionAction: "Enter title",

@@ -23,6 +23,9 @@
 		1EAA3ED2299CFE6E009B53C3 /* ErrorModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ED1299CFE6E009B53C3 /* ErrorModelLogic.swift */; };
 		1EAA3ED4299D0282009B53C3 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ED3299D0282009B53C3 /* GameTests.swift */; };
 		1EAB1CFD299D1A57009929E4 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */; };
+		1EACC51529A91399002E19CD /* TableGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACC51429A91399002E19CD /* TableGamesViewController.swift */; };
+		1EACC51729A96CB3002E19CD /* ReadGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */; };
+		1EB4201929ACB78C007D06ED /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4201829ACB78C007D06ED /* StorageProviderTests.swift */; };
 		1EB972E129A760E2000D1B81 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972E029A760E2000D1B81 /* Command.swift */; };
 		1EB972E329A76140000D1B81 /* CRUDGameOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972E229A76140000D1B81 /* CRUDGameOp.swift */; };
 		1EB972E529A764CF000D1B81 /* CRUDGameOpInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972E429A764CF000D1B81 /* CRUDGameOpInvoker.swift */; };
@@ -72,6 +75,9 @@
 		1EAA3ED1299CFE6E009B53C3 /* ErrorModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModelLogic.swift; sourceTree = "<group>"; };
 		1EAA3ED3299D0282009B53C3 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		1EACC51429A91399002E19CD /* TableGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableGamesViewController.swift; sourceTree = "<group>"; };
+		1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGameViewController.swift; sourceTree = "<group>"; };
+		1EB4201829ACB78C007D06ED /* StorageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderTests.swift; sourceTree = "<group>"; };
 		1EB972E029A760E2000D1B81 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		1EB972E229A76140000D1B81 /* CRUDGameOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDGameOp.swift; sourceTree = "<group>"; };
 		1EB972E429A764CF000D1B81 /* CRUDGameOpInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDGameOpInvoker.swift; sourceTree = "<group>"; };
@@ -165,8 +171,10 @@
 				1EAA2332299DF2ED001EC660 /* Model */,
 				1EAA3ECD299CF527009B53C3 /* RootTableViewController.swift */,
 				1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */,
+				1EACC51429A91399002E19CD /* TableGamesViewController.swift */,
 				1EAA2333299DF320001EC660 /* PersistanceCoreData */,
 				1EAA2331299DF2C7001EC660 /* CustomUIControl */,
+				1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */,
 			);
 			path = UIKitCoreData;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 				1EAA3EAE299CDC28009B53C3 /* UIKitCoreDataTests.swift */,
 				1EAA3ED3299D0282009B53C3 /* GameTests.swift */,
 				1EB972EA29A78832000D1B81 /* CRUDGameOpTests.swift */,
+				1EB4201829ACB78C007D06ED /* StorageProviderTests.swift */,
 				1EB972EE29A78C85000D1B81 /* Samples.swift */,
 				1EB972F229A79B7A000D1B81 /* RepetiveFuncChecks.swift */,
 			);
@@ -350,6 +359,7 @@
 				1EA7B3A1299D8957009D1AA4 /* DoneUIToolBar.swift in Sources */,
 				1EB972E329A76140000D1B81 /* CRUDGameOp.swift in Sources */,
 				1EAA3ED0299CFA97009B53C3 /* Game.swift in Sources */,
+				1EACC51729A96CB3002E19CD /* ReadGameViewController.swift in Sources */,
 				1EBC9C4529A7B34C003B1AC8 /* ExtensionUIAlertController.swift in Sources */,
 				1EC23E26299D31BA005E5058 /* CustomUIPickerView.swift in Sources */,
 				1EB972E729A76569000D1B81 /* CRUDGameCreateCommand.swift in Sources */,
@@ -359,6 +369,7 @@
 				1EAA3ED2299CFE6E009B53C3 /* ErrorModelLogic.swift in Sources */,
 				1EAA3E9A299CDC26009B53C3 /* SceneDelegate.swift in Sources */,
 				1EAB1CFD299D1A57009929E4 /* CreateGameViewController.swift in Sources */,
+				1EACC51529A91399002E19CD /* TableGamesViewController.swift in Sources */,
 				1EB972E129A760E2000D1B81 /* Command.swift in Sources */,
 				1EAA3ECC299CF1D5009B53C3 /* UIKitCoreData.xcdatamodeld in Sources */,
 			);
@@ -372,6 +383,7 @@
 				1EAA3EAF299CDC28009B53C3 /* UIKitCoreDataTests.swift in Sources */,
 				1EB972EF29A78C85000D1B81 /* Samples.swift in Sources */,
 				1EB972EB29A78832000D1B81 /* CRUDGameOpTests.swift in Sources */,
+				1EB4201929ACB78C007D06ED /* StorageProviderTests.swift in Sources */,
 				1EAA3ED4299D0282009B53C3 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

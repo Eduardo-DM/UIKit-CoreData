@@ -53,10 +53,29 @@ final class StorageProvider{
         case inMemory, persisted
     }
     
+    func getGame(title: String, ctx: NSManagedObjectContext) throws ->  Games? {
+        let query: NSFetchRequest <Games> = Games.fetchRequest()
+        query.predicate = NSPredicate(format: "%K == %@",
+                                      #keyPath(Games.title),
+                                      title)
+        do{
+            let result = try ctx.fetch(query)
+            return result.first
+        }
+        catch {
+            throw ErrorModelLogic.Persistance.unExpectedErrorInQuery(error)
+        }
+    }
+    
 }
 
 extension ErrorModelLogic{
-    enum Persistance: Error{
+    enum Persistance: Error, Equatable{
+        static func == (lhs: ErrorModelLogic.Persistance, rhs: ErrorModelLogic.Persistance) -> Bool {
+            lhs.localizedDescription == rhs.localizedDescription
+        }
+        
         case gameAlreadyExists
+        case unExpectedErrorInQuery (Error)
     }
 }

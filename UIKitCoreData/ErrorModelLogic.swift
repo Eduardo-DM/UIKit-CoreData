@@ -7,7 +7,11 @@
 
 import Foundation
 
-enum ErrorModelLogic: Error{
+enum ErrorModelLogic: Error, Equatable{
+    static func == (lhs: ErrorModelLogic, rhs: ErrorModelLogic) -> Bool {
+        lhs.localizedDescription == rhs.localizedDescription
+    }
+    
     case notDefined
     case systemError(Error)
 }

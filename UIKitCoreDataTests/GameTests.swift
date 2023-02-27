@@ -7,15 +7,18 @@
 
 import XCTest
 @testable import UIKitCoreData
+import CoreData
 
 final class GameTests: XCTestCase {
+    
+    var ctx: NSManagedObjectContext!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        ctx = StorageProvider(storeType: .inMemory).persistentContainer.viewContext
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        ctx = nil
     }
 
     func testGameInit() {
@@ -72,6 +75,20 @@ final class GameTests: XCTestCase {
             }
         })
         
+    }
+    
+    func testInitFromCoreData(){
+        let cRUDGameOp = CRUDGameOp()
+        try! cRUDGameOp.addGameEntityInCoreData(game: game1, ctx: ctx)
+        try! cRUDGameOp.addGameEntityInCoreData(game: game2, ctx: ctx)
+        let game1CoreData = try! StorageProvider.shared.getGame(title: game1.title, ctx: ctx)
+        let game2CoreData = try! StorageProvider.shared.getGame(title: game2.title, ctx: ctx)
+        
+        let convertedGame1FromCoreData = try! Game(gameCoreData: game1CoreData!)
+        let convertedGame2FromCoreData = try! Game(gameCoreData: game2CoreData!)
+        
+        XCTAssertEqual(game1, convertedGame1FromCoreData)
+        XCTAssertEqual(game2, convertedGame2FromCoreData)
     }
     
 /*

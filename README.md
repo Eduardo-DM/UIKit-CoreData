@@ -2,7 +2,7 @@
 
 Recreate the CRUD cycle for an entity that represents the basic data for a board game in the context of an app which goal is be a library for this kind of products.
 
-Now, it's only ready the full flow for Create operation.
+Now, Create & Read operations of CRUD cycle are implemented.
 
 ### UIKit
 

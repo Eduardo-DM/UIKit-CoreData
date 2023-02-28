@@ -66,7 +66,6 @@ struct Game: Equatable{
     }
     
     init (gameCoreData: Games) throws{
-        throw (ErrorModelLogic.notDefined)
         guard let title = gameCoreData.title, title != "" else {
             throw ErrorModelLogic.Game.noTitle
         }

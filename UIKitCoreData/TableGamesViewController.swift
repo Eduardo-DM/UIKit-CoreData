@@ -31,6 +31,15 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
             print("Error fetching games: \(error)")
         }
         
+     
+        let backgroundImage = UIImage(named: "PolyBackground")
+        let imageView = UIImageView(image: backgroundImage)
+
+        imageView.contentMode = .scaleAspectFill
+        imageView.frame = tableView.frame
+
+        tableView.backgroundView = imageView
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

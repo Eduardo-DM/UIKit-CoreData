@@ -9,6 +9,8 @@ import UIKit
 
 class RootTableViewController: UITableViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,8 @@ class RootTableViewController: UITableViewController {
 
         tableView.backgroundView = imageView
         
+        tableView.isScrollEnabled = false
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,12 +31,21 @@ class RootTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+
+    
     // MARK: - Interface
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.clear
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.7)
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.contentView.backgroundColor = .white.withAlphaComponent(0.8)
+        }
+    }
+    
+ 
     /*
     // MARK: - Navigation
 

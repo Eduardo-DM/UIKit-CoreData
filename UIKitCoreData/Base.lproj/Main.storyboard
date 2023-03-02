@@ -565,12 +565,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="159" width="410" height="382"/>
+                                <rect key="frame" x="10" y="158.99999999999997" width="410" height="382.33333333333326"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">
@@ -704,6 +704,11 @@
                                             </constraints>
                                         </view>
                                         <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </visualEffectView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

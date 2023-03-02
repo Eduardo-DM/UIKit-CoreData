@@ -553,10 +553,10 @@
             </objects>
             <point key="canvasLocation" x="96.92307692307692" y="-94.549763033175353"/>
         </scene>
-        <!--CreateGameViewController-->
+        <!--UpdateGameViewController-->
         <scene sceneID="qrG-At-g0K">
             <objects>
-                <viewController title="CreateGameViewController" id="Zan-dg-C5M" sceneMemberID="viewController">
+                <viewController title="UpdateGameViewController" id="Zan-dg-C5M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gg-8H-71m">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,12 +565,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="158.99999999999997" width="410" height="382.33333333333326"/>
+                                <rect key="frame" x="10" y="159" width="410" height="382"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">

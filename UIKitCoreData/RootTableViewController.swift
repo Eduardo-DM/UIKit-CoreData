@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RootTableViewController: UITableViewController {
+final class RootTableViewController: UITableViewController {
 
 
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UpdateGameViewController: UIViewController {
+final class UpdateGameViewController: UIViewController {
 
     var gameInScreen: Game?
     

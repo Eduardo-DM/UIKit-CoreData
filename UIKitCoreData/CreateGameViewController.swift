@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateGameViewController: UIViewController, UITextFieldDelegate, ReusablePickerViewDelegate {
+final class CreateGameViewController: UIViewController, UITextFieldDelegate, ReusablePickerViewDelegate {
 
     @IBOutlet weak var titleGame: UITextField!
     @IBOutlet weak var designer: UITextField!

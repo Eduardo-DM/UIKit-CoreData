@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class TableGamesViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+final class TableGamesViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     enum Operation{
         case read, update

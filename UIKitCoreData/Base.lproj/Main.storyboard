@@ -69,7 +69,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="vU8-O9-OjB" kind="show" id="e7B-Ls-iee"/>
+                                            <segue destination="vU8-O9-OjB" kind="show" identifier="segueGamesToRead" id="e7B-Ls-iee"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" rowHeight="43" id="Axp-2p-vqv">
@@ -94,6 +94,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="vU8-O9-OjB" kind="show" identifier="segueGamesToUpdate" id="XIN-jG-Va5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="43" id="xb1-lp-f3I">
                                         <rect key="frame" x="0.0" y="179" width="430" height="43"/>
@@ -341,8 +344,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Read games" largeTitleDisplayMode="never" id="SvR-Qs-aOC"/>
                     <connections>
-                        <segue destination="gA1-VY-3xR" kind="showDetail" id="1zJ-TT-1FL"/>
-                        <segue destination="Zan-dg-C5M" kind="showDetail" id="Jgk-f9-ab9"/>
+                        <segue destination="gA1-VY-3xR" kind="showDetail" identifier="segueReadGameDetails" id="1zJ-TT-1FL"/>
+                        <segue destination="Zan-dg-C5M" kind="showDetail" identifier="segueUpdateGameDetails" id="Jgk-f9-ab9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj9-ZU-nUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -557,7 +560,7 @@
         <!--UpdateGameViewController-->
         <scene sceneID="qrG-At-g0K">
             <objects>
-                <viewController title="UpdateGameViewController" id="Zan-dg-C5M" sceneMemberID="viewController">
+                <viewController title="UpdateGameViewController" id="Zan-dg-C5M" customClass="UpdateGameViewController" customModule="UIKitCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gg-8H-71m">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -571,7 +574,7 @@
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">
@@ -759,12 +762,22 @@
                     <navigationItem key="navigationItem" title="Create game" largeTitleDisplayMode="never" id="Rbh-wb-If6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jAH-sQ-VqO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTarget" destination="15s-ee-fs0" id="AGN-s9-HTd"/>
+                        <outlet property="complexity" destination="UwB-XC-1NJ" id="uGg-aL-UNS"/>
+                        <outlet property="designer" destination="v6U-nf-8hL" id="akf-fg-RBr"/>
+                        <outlet property="releaseYear" destination="TjI-xN-XxJ" id="oVd-pv-aOS"/>
+                        <outlet property="titleTextField" destination="5y2-fG-6Gw" id="JCI-VO-OXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qb-g9-doA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2765.5813953488373" y="373.39055793991417"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XIN-jG-Va5"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="PolyBackground" width="430" height="764.33331298828125"/>
         <systemColor name="systemBackgroundColor">

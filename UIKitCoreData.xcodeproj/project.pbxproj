@@ -35,6 +35,7 @@
 		1EB972EB29A78832000D1B81 /* CRUDGameOpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972EA29A78832000D1B81 /* CRUDGameOpTests.swift */; };
 		1EB972EF29A78C85000D1B81 /* Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972EE29A78C85000D1B81 /* Samples.swift */; };
 		1EB972F329A79B7A000D1B81 /* RepetiveFuncChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB972F229A79B7A000D1B81 /* RepetiveFuncChecks.swift */; };
+		1EBA496A29B0E6AA0056D04B /* UpdateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA496929B0E6AA0056D04B /* UpdateGameViewController.swift */; };
 		1EBC9C4529A7B34C003B1AC8 /* ExtensionUIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC9C4429A7B34C003B1AC8 /* ExtensionUIAlertController.swift */; };
 		1EC23E26299D31BA005E5058 /* CustomUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC23E25299D31BA005E5058 /* CustomUIPickerView.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		1EB972EA29A78832000D1B81 /* CRUDGameOpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDGameOpTests.swift; sourceTree = "<group>"; };
 		1EB972EE29A78C85000D1B81 /* Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Samples.swift; sourceTree = "<group>"; };
 		1EB972F229A79B7A000D1B81 /* RepetiveFuncChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetiveFuncChecks.swift; sourceTree = "<group>"; };
+		1EBA496929B0E6AA0056D04B /* UpdateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGameViewController.swift; sourceTree = "<group>"; };
 		1EBC9C4429A7B34C003B1AC8 /* ExtensionUIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIAlertController.swift; sourceTree = "<group>"; };
 		1EC23E25299D31BA005E5058 /* CustomUIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +181,7 @@
 				1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */,
 				1EACC51429A91399002E19CD /* TableGamesViewController.swift */,
 				1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */,
+				1EBA496929B0E6AA0056D04B /* UpdateGameViewController.swift */,
 				1EAA2333299DF320001EC660 /* PersistanceCoreData */,
 				1EAA2331299DF2C7001EC660 /* CustomUIControl */,
 			);
@@ -370,6 +373,7 @@
 				1EB2035029B06ACF00192C3B /* CustomUIVisualEffectView.swift in Sources */,
 				1EC23E26299D31BA005E5058 /* CustomUIPickerView.swift in Sources */,
 				1EB2034E29B06A4300192C3B /* CustomUIView.swift in Sources */,
+				1EBA496A29B0E6AA0056D04B /* UpdateGameViewController.swift in Sources */,
 				1EB972E729A76569000D1B81 /* CRUDGameCreateCommand.swift in Sources */,
 				1EAA3EC9299CF16E009B53C3 /* StorageProvider.swift in Sources */,
 				1EB972E529A764CF000D1B81 /* CRUDGameOpInvoker.swift in Sources */,

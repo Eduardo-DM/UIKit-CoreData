@@ -73,6 +73,9 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // tableView.deselectRow(at: indexPath, animated: false)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -125,6 +128,18 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
             catch{
                 present(UIAlertController.showAlertOkNothing(title: "Unexpected error", message: "It was imposible recover information about the game, please try later."), animated: true, completion: nil)
             }
+        }
+        else if segue.identifier == "segueUpdateGameDetails",
+         /*   let destination = segue.destination as? ReadGameViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell) {
+            let gameFromCoreData = fetchedResultsController.object(at: indexPath)
+            do {
+                destination.gameInScreen = try Game(gameCoreData: gameFromCoreData)
+            }
+            catch{
+                present(UIAlertController.showAlertOkNothing(title: "Unexpected error", message: "It was imposible recover information about the game, please try later."), animated: true, completion: nil)
+            }*/
         }
     }
     

@@ -332,9 +332,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="gA1-VY-3xR" kind="showDetail" identifier="segueReadGameDetails" id="VRi-52-eUe"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -343,6 +340,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Read games" largeTitleDisplayMode="never" id="SvR-Qs-aOC"/>
+                    <connections>
+                        <segue destination="gA1-VY-3xR" kind="showDetail" id="1zJ-TT-1FL"/>
+                        <segue destination="Zan-dg-C5M" kind="showDetail" id="Jgk-f9-ab9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj9-ZU-nUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -533,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YY-1x-9Gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765.5813953488373" y="-312.2317596566524"/>
+            <point key="canvasLocation" x="2766" y="-320"/>
         </scene>
         <!--NavigationEntry-->
         <scene sceneID="fO1-Zs-PSA">
@@ -558,17 +559,17 @@
             <objects>
                 <viewController title="UpdateGameViewController" id="Zan-dg-C5M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gg-8H-71m">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PolyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nST-gR-VdP">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="159" width="410" height="382"/>
+                                <rect key="frame" x="10" y="158.99999999999997" width="410" height="382.33333333333326"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="382"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

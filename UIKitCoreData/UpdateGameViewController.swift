@@ -9,6 +9,8 @@ import UIKit
 
 class UpdateGameViewController: UIViewController {
 
+    var gameInScreen: Game?
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var designer: UITextField!
     @IBOutlet weak var releaseYear: UITextField!
@@ -19,7 +21,11 @@ class UpdateGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleTextField.text = gameInScreen?.title ?? ""
+        designer.text = gameInScreen?.designer ?? ""
+        complexity.text = gameInScreen?.complexity?.toEng() ?? ""
+        ageTarget.text = gameInScreen?.targetAge?.toEng() ?? ""
+        releaseYear.text = gameInScreen?.yearReleased == nil ? "" : String(gameInScreen!.yearReleased!)
     }
     /*
     // MARK: - Navigation

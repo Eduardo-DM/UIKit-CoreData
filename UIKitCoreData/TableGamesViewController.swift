@@ -10,7 +10,13 @@ import CoreData
 
 class TableGamesViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
+    enum Operation{
+        case read, update
+    }
+    
     var fetchedResultsController: NSFetchedResultsController<Games>!
+    
+    var operation: Operation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +80,16 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // tableView.deselectRow(at: indexPath, animated: false)
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch self.operation{
+        case .read:
+            performSegue(withIdentifier: "segueReadGameDetails", sender: indexPath)
+        case .update:
+            performSegue(withIdentifier: "segueUpdateGameDetails", sender: indexPath)
+        case .none:
+            return
+        }
+        
     }
 
     /*
@@ -119,8 +134,7 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueReadGameDetails",
             let destination = segue.destination as? ReadGameViewController,
-            let cell = sender as? UITableViewCell,
-            let indexPath = tableView.indexPath(for: cell) {
+            let indexPath = sender as? IndexPath {
             let gameFromCoreData = fetchedResultsController.object(at: indexPath)
             do {
                 destination.gameInScreen = try Game(gameCoreData: gameFromCoreData)
@@ -130,16 +144,15 @@ class TableGamesViewController: UITableViewController, NSFetchedResultsControlle
             }
         }
         else if segue.identifier == "segueUpdateGameDetails",
-         /*   let destination = segue.destination as? ReadGameViewController,
-            let cell = sender as? UITableViewCell,
-            let indexPath = tableView.indexPath(for: cell) {
+            let destination = segue.destination as? UpdateGameViewController,
+            let indexPath = sender as? IndexPath {
             let gameFromCoreData = fetchedResultsController.object(at: indexPath)
             do {
                 destination.gameInScreen = try Game(gameCoreData: gameFromCoreData)
             }
             catch{
                 present(UIAlertController.showAlertOkNothing(title: "Unexpected error", message: "It was imposible recover information about the game, please try later."), animated: true, completion: nil)
-            }*/
+            }
         }
     }
     

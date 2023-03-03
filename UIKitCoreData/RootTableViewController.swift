@@ -24,6 +24,33 @@ final class RootTableViewController: UITableViewController {
         
         tableView.isScrollEnabled = false
         
+        let topBackgroundColor = UIColor.systemIndigo.withAlphaComponent(0.6)
+        
+        let topSafeAreaInset: CGFloat
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            topSafeAreaInset = windowScene.windows.first?.safeAreaInsets.top ?? 0
+        }
+        else{
+            topSafeAreaInset = 0
+        }
+        let coverSafeArea = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: topSafeAreaInset))
+        coverSafeArea.backgroundColor = topBackgroundColor
+        tableView.backgroundView?.addSubview(coverSafeArea)
+        
+        let topSafeAreaInsetsNavigationBar = navigationController?.navigationBar.safeAreaInsets.top ?? 0
+        let navigationBarHeight = navigationController?.navigationBar.frame.size.height ?? 0
+        let coverNavigationBar = UIView(frame: CGRect(x: 0, y: topSafeAreaInset, width: view.bounds.width, height: navigationBarHeight - topSafeAreaInsetsNavigationBar))
+        coverNavigationBar.backgroundColor = topBackgroundColor
+        tableView.backgroundView?.addSubview(coverNavigationBar)
+        
+        let endNavigationBar = topSafeAreaInset - topSafeAreaInsetsNavigationBar + navigationBarHeight
+        
+        let aaa = tableView.rectForHeader(inSection: 0)
+        let startSection = tableView.rectForHeader(inSection: 0).origin.y
+        let coverBandOverSection = UIView(frame: CGRect(x: 0, y: endNavigationBar, width: view.bounds.width, height: startSection))
+        coverBandOverSection.backgroundColor = topBackgroundColor
+        tableView.backgroundView?.addSubview(coverBandOverSection)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

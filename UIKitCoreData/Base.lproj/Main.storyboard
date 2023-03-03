@@ -569,12 +569,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="158.99999999999997" width="410" height="382.33333333333326"/>
+                                <rect key="frame" x="10" y="159.00000000000003" width="410" height="382.66666666666674"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.33333333333331"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">

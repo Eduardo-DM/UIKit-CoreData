@@ -19,7 +19,6 @@
 		1EAA3EBB299CDC28009B53C3 /* UIKitCoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3EBA299CDC28009B53C3 /* UIKitCoreDataUITestsLaunchTests.swift */; };
 		1EAA3EC9299CF16E009B53C3 /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3EC8299CF16E009B53C3 /* StorageProvider.swift */; };
 		1EAA3ECC299CF1D5009B53C3 /* UIKitCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ECA299CF1D5009B53C3 /* UIKitCoreData.xcdatamodeld */; };
-		1EAA3ECE299CF527009B53C3 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ECD299CF527009B53C3 /* RootTableViewController.swift */; };
 		1EAA3ED0299CFA97009B53C3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ECF299CFA97009B53C3 /* Game.swift */; };
 		1EAA3ED2299CFE6E009B53C3 /* ErrorModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ED1299CFE6E009B53C3 /* ErrorModelLogic.swift */; };
 		1EAA3ED4299D0282009B53C3 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3ED3299D0282009B53C3 /* GameTests.swift */; };
@@ -75,7 +74,6 @@
 		1EAA3EBA299CDC28009B53C3 /* UIKitCoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1EAA3EC8299CF16E009B53C3 /* StorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		1EAA3ECB299CF1D5009B53C3 /* UIKitCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UIKitCoreData.xcdatamodel; sourceTree = "<group>"; };
-		1EAA3ECD299CF527009B53C3 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
 		1EAA3ECF299CFA97009B53C3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1EAA3ED1299CFE6E009B53C3 /* ErrorModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModelLogic.swift; sourceTree = "<group>"; };
 		1EAA3ED3299D0282009B53C3 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 				1EAA3E9D299CDC26009B53C3 /* Main.storyboard */,
 				1EB972DF29A7607D000D1B81 /* BusinessLogic */,
 				1EAA2332299DF2ED001EC660 /* Model */,
-				1EAA3ECD299CF527009B53C3 /* RootTableViewController.swift */,
 				1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */,
 				1EACC51429A91399002E19CD /* TableGamesViewController.swift */,
 				1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */,
@@ -380,7 +377,6 @@
 				1EB972E729A76569000D1B81 /* CRUDGameCreateCommand.swift in Sources */,
 				1EAA3EC9299CF16E009B53C3 /* StorageProvider.swift in Sources */,
 				1EB972E529A764CF000D1B81 /* CRUDGameOpInvoker.swift in Sources */,
-				1EAA3ECE299CF527009B53C3 /* RootTableViewController.swift in Sources */,
 				1EAA3ED2299CFE6E009B53C3 /* ErrorModelLogic.swift in Sources */,
 				1EAA3E9A299CDC26009B53C3 /* SceneDelegate.swift in Sources */,
 				1EAB1CFD299D1A57009929E4 /* CreateGameViewController.swift in Sources */,

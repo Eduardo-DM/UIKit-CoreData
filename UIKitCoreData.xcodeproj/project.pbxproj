@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA66C9029B5EB09002B7D71 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */; };
 		1EA7B3A1299D8957009D1AA4 /* DoneUIToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7B3A0299D8957009D1AA4 /* DoneUIToolBar.swift */; };
 		1EAA3E98299CDC26009B53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3E97299CDC26009B53C3 /* AppDelegate.swift */; };
 		1EAA3E9A299CDC26009B53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3E99299CDC26009B53C3 /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		1EA7B3A0299D8957009D1AA4 /* DoneUIToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneUIToolBar.swift; sourceTree = "<group>"; };
 		1EAA3E94299CDC26009B53C3 /* UIKitCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAA3E97299CDC26009B53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				1EBA496929B0E6AA0056D04B /* UpdateGameViewController.swift */,
 				1EAA2333299DF320001EC660 /* PersistanceCoreData */,
 				1EAA2331299DF2C7001EC660 /* CustomUIControl */,
+				1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */,
 			);
 			path = UIKitCoreData;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				1EAA3ED2299CFE6E009B53C3 /* ErrorModelLogic.swift in Sources */,
 				1EAA3E9A299CDC26009B53C3 /* SceneDelegate.swift in Sources */,
 				1EAB1CFD299D1A57009929E4 /* CreateGameViewController.swift in Sources */,
+				1EA66C9029B5EB09002B7D71 /* MainScreenViewController.swift in Sources */,
 				1EACC51529A91399002E19CD /* TableGamesViewController.swift in Sources */,
 				1EB972E129A760E2000D1B81 /* Command.swift in Sources */,
 				1EAA3ECC299CF1D5009B53C3 /* UIKitCoreData.xcdatamodeld in Sources */,

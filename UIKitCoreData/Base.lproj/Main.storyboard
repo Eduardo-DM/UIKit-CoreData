@@ -43,9 +43,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="Z3d-s4-lnf" kind="show" id="0Zu-dc-aTK"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" rowHeight="43" id="R7f-7R-gzC">
                                         <rect key="frame" x="0.0" y="93" width="430" height="43"/>
@@ -301,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-nZ-t5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851.6279069767443" y="-994.63519313304732"/>
+            <point key="canvasLocation" x="2809" y="416"/>
         </scene>
         <!--TableGamesViewController-->
         <scene sceneID="GJY-b2-arZ">
@@ -575,7 +572,7 @@
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-Si-97A" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="258.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jMB-A3-OUo">
-                                            <rect key="frame" x="0.0" y="0.0" width="212" height="258"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="258.33333333333331"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Jo-gyQ">
@@ -588,6 +585,9 @@
                                                         </backgroundConfiguration>
                                                         <directionalEdgeInsets key="contentInsets" top="6" leading="16" bottom="6" trailing="16"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <segue destination="Z3d-s4-lnf" kind="show" id="cz0-8o-bQ0"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkT-bH-Yiw">
                                                     <rect key="frame" x="20" y="111.33333333333331" width="128" height="32"/>

@@ -13,12 +13,10 @@ final class UIKitCoreDataTests: XCTestCase {
     
     var ctx: NSManagedObjectContext!
     var opInvoker: CRUDGameOPInvoker!
-    var cRUDGameOp: CRUDGameOp!
 
     override func setUpWithError() throws {
         ctx = StorageProvider(storeType: .inMemory).persistentContainer.viewContext
         opInvoker = CRUDGameOPInvoker()
-        cRUDGameOp = CRUDGameOp()
     }
 
     override func tearDownWithError() throws {
@@ -27,8 +25,7 @@ final class UIKitCoreDataTests: XCTestCase {
 
     func testCRUDGameCreateInCoreDataCommand() throws {
         
-        var commandToRun = CRUDGameCreateInCoreDataCommand(
-            cRUDGameCreate: cRUDGameOp,
+        let commandToRun = CRUDGameCreateInCoreDataCommand(
             designer: "Uwe Rosenberg",
             complexity: Game.Complexity.medium,
             targetAge: Game.TargetAge.adults,
@@ -49,12 +46,12 @@ final class UIKitCoreDataTests: XCTestCase {
         }
         
     }
-
+/*
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
-    }
+    }*/
 
 }

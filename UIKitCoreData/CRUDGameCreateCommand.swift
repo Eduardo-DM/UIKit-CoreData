@@ -12,7 +12,7 @@ struct CRUDGameCreateInCoreDataCommand: Command {
     
     let ctx: NSManagedObjectContext
     
-    var cRUDGameCreate: CRUDGameOp
+    var operation: CRUDGameOp
     
     let designer: String?
     let complexity: Game.Complexity?
@@ -20,8 +20,8 @@ struct CRUDGameCreateInCoreDataCommand: Command {
     let title: String
     let yearReleased: String?
     
-    init(cRUDGameCreate: CRUDGameOp, designer: String?, complexity: Game.Complexity?, targetAge: Game.TargetAge?, title: String, yearReleased: String?, ctx: NSManagedObjectContext) {
-        self.cRUDGameCreate = cRUDGameCreate
+    init(designer: String?, complexity: Game.Complexity?, targetAge: Game.TargetAge?, title: String, yearReleased: String?, ctx: NSManagedObjectContext) {
+        self.operation = CRUDGameOp()
         self.designer = designer
         self.complexity = complexity
         self.targetAge = targetAge
@@ -31,13 +31,13 @@ struct CRUDGameCreateInCoreDataCommand: Command {
     }
     
     func execute() throws{
-        let game = try cRUDGameCreate.createGameEntity(designer: self.designer,
+        let game = try operation.createGameEntity(designer: self.designer,
                                             complexity: self.complexity,
                                             targetAge: self.targetAge,
                                             title: title,
                                             yearReleased: self.yearReleased)
-        try cRUDGameCreate.checkTitle(game.title, ctx: ctx)
-        try cRUDGameCreate.addGameEntityInCoreData(game: game, ctx: ctx)
+        try operation.checkTitle(game.title, ctx: ctx)
+        try operation.addGameEntityInCoreData(game: game, ctx: ctx)
     }
 
 }

@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let opInvoker = CRUDGameOPInvoker()
         let cRUDGameOp = CRUDGameOp()
         var commandToRun = CRUDGameCreateInCoreDataCommand(
-            cRUDGameCreate: cRUDGameOp,
             designer: "Uwe Rosenberg",
             complexity: Game.Complexity.medium,
             targetAge: Game.TargetAge.adults,

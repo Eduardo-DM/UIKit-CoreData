@@ -19,7 +19,6 @@ final class CreateGameViewController: UIViewController, UITextFieldDelegate, Reu
     var selectedComplexity: Game.Complexity?
     
     let opInvoker = CRUDGameOPInvoker()
-    let cRUDGameOp = CRUDGameOp()
     let ctx = StorageProvider.shared.persistentContainer.viewContext
     
     override func viewDidLoad() {
@@ -84,7 +83,7 @@ final class CreateGameViewController: UIViewController, UITextFieldDelegate, Reu
 
     @IBAction func addGame(_ sender: Any) {
         do {
-            let commandToRun = CRUDGameCreateInCoreDataCommand(cRUDGameCreate: cRUDGameOp, designer: designer.text, complexity: selectedComplexity, targetAge: selectedAgeTarget, title: titleGame.text ?? "", yearReleased: releaseYear.text, ctx:ctx)
+            let commandToRun = CRUDGameCreateInCoreDataCommand(designer: designer.text, complexity: selectedComplexity, targetAge: selectedAgeTarget, title: titleGame.text ?? "", yearReleased: releaseYear.text, ctx:ctx)
             opInvoker.setCommand(command: commandToRun)
             try opInvoker.run()
             if let navigationController = self.navigationController {

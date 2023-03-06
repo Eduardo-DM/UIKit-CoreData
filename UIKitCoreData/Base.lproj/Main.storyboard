@@ -89,9 +89,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="vU8-O9-OjB" kind="show" identifier="segueGamesToUpdate" id="XIN-jG-Va5"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="43" id="xb1-lp-f3I">
                                         <rect key="frame" x="0.0" y="179" width="430" height="43"/>
@@ -295,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-nZ-t5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="416"/>
+            <point key="canvasLocation" x="2773" y="23"/>
         </scene>
         <!--TableGamesViewController-->
         <scene sceneID="GJY-b2-arZ">
@@ -345,7 +342,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj9-ZU-nUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="1114"/>
+            <point key="canvasLocation" x="2806" y="666"/>
         </scene>
         <!--ReadGameViewController-->
         <scene sceneID="UBk-gv-Kgh">
@@ -532,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YY-1x-9Gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3999" y="598"/>
+            <point key="canvasLocation" x="3957" y="445"/>
         </scene>
         <!--NavigationEntry-->
         <scene sceneID="fO1-Zs-PSA">
@@ -627,6 +624,9 @@
                                                         </backgroundConfiguration>
                                                         <directionalEdgeInsets key="contentInsets" top="6" leading="16" bottom="6" trailing="16"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <segue destination="vU8-O9-OjB" kind="show" identifier="segueGamesToUpdate" id="UbI-rv-8Np"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -723,7 +723,7 @@
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="383"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">
@@ -921,7 +921,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qb-g9-doA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4014" y="1291"/>
+            <point key="canvasLocation" x="3956" y="1100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ud5-7j-FaH">
@@ -943,7 +943,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XqZ-07-4ER"/>
+        <segue reference="UbI-rv-8Np"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="PolyBackground" width="430" height="764.33331298828125"/>

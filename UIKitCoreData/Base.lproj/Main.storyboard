@@ -426,12 +426,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-4R-CUx" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="20" y="205.00000000000003" width="212.33333333333334" height="258.66666666666674"/>
+                                <rect key="frame" x="20" y="204.99999999999997" width="212.66666666666666" height="258.33333333333326"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-Si-97A" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="258.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="212.66666666666666" height="258.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jMB-A3-OUo">
-                                            <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="258.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="212.66666666666666" height="258.33333333333331"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Jo-gyQ">
@@ -583,16 +583,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="159.00000000000003" width="410" height="382.66666666666674"/>
+                                <rect key="frame" x="10" y="158.99999999999997" width="410" height="432.33333333333326"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="432.33333333333331"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="382.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="432"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">
-                                                    <rect key="frame" x="20" y="20" width="370" height="342.33333333333331"/>
+                                                    <rect key="frame" x="20" y="20" width="370" height="392.66666666666669"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-Ye-TuQ" userLabel="TitleStackView">
                                                             <rect key="frame" x="0.0" y="0.0" width="370" height="62.333333333333336"/>
@@ -706,6 +706,17 @@
                                                                 <constraint firstAttribute="trailing" secondItem="UwB-XC-1NJ" secondAttribute="trailing" id="vNV-sL-NTy"/>
                                                             </constraints>
                                                         </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN3-pI-wvD">
+                                                            <rect key="frame" x="0.0" y="352.33333333333337" width="370" height="40.333333333333314"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="tinted" imagePlacement="trailing" title="Save" imagePadding="16" cornerStyle="capsule">
+                                                                <imageReference key="image" image="square.and.arrow.down" catalog="system" symbolScale="default"/>
+                                                                <backgroundConfiguration key="background">
+                                                                    <color key="strokeColor" systemColor="systemIndigoColor"/>
+                                                                </backgroundConfiguration>
+                                                                <directionalEdgeInsets key="contentInsets" top="10" leading="0.0" bottom="10" trailing="0.0"/>
+                                                            </buttonConfiguration>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="pOj-7F-W0V" firstAttribute="width" secondItem="DTM-Y5-5dL" secondAttribute="width" id="5Zf-Gt-AZy"/>
@@ -815,6 +826,7 @@
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="pencil.line" catalog="system" width="128" height="98"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="trash" catalog="system" width="117" height="128"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

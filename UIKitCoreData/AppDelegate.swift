@@ -13,6 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let ctx = StorageProvider.shared.persistentContainer.viewContext
+        let opInvoker = CRUDGameOPInvoker()
+        let cRUDGameOp = CRUDGameOp()
+        var commandToRun = CRUDGameCreateInCoreDataCommand(
+            cRUDGameCreate: cRUDGameOp,
+            designer: "Uwe Rosenberg",
+            complexity: Game.Complexity.medium,
+            targetAge: Game.TargetAge.adults,
+            title: "Le Havre",
+            yearReleased: "2008",
+            ctx:ctx)
+        opInvoker.setCommand(command: commandToRun)
+        try! opInvoker.run()
         return true
     }
 

@@ -6,24 +6,48 @@
 //
 
 import XCTest
+import CoreData
 @testable import UIKitCoreData
 
 final class UIKitCoreDataTests: XCTestCase {
+    
+    var ctx: NSManagedObjectContext!
+    var opInvoker: CRUDGameOPInvoker!
+    var cRUDGameOp: CRUDGameOp!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        ctx = StorageProvider(storeType: .inMemory).persistentContainer.viewContext
+        opInvoker = CRUDGameOPInvoker()
+        cRUDGameOp = CRUDGameOp()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        ctx = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testCRUDGameCreateInCoreDataCommand() throws {
+        
+        var commandToRun = CRUDGameCreateInCoreDataCommand(
+            cRUDGameCreate: cRUDGameOp,
+            designer: "Uwe Rosenberg",
+            complexity: Game.Complexity.medium,
+            targetAge: Game.TargetAge.adults,
+            title: "Le Havre",
+            yearReleased: "2008",
+            ctx:ctx)
+        
+        opInvoker.setCommand(command: commandToRun)
+        
+        XCTAssertNotNil(try? opInvoker.run())
+        let query: NSFetchRequest <Games> = Games.fetchRequest()
+        query.predicate = NSPredicate(format: "%K == %@",
+                                      #keyPath(Games.title),
+                                      "Le Havre")
+        let result = try ctx.count(for: query)
+        if result != 1 {
+            XCTFail()
+        }
+        
     }
 
     func testPerformanceExample() throws {

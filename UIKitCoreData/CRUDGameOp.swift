@@ -41,4 +41,26 @@ struct CRUDGameOp {
         }
     }
     
+    func getGameCoreData(title: String, ctx: NSManagedObjectContext) throws -> Games?{
+        let query: NSFetchRequest <Games> = Games.fetchRequest()
+        query.predicate = NSPredicate(format: "%K == %@",
+                                      #keyPath(Games.title),
+                                      title)
+        let result = try ctx.fetch(query)
+        return result.first
+    }
+    
+    func updateGameCoreData(gameCD: Games, newDataGame: Game, ctx: NSManagedObjectContext) throws{
+        do{
+            gameCD.complexity = newDataGame.complexity == nil ? nil : NSNumber(value: newDataGame.complexity!.rawValue)
+            gameCD.designer = newDataGame.designer
+            gameCD.targetAge = newDataGame.targetAge == nil ? nil : NSNumber(value: newDataGame.targetAge!.rawValue)
+            gameCD.yearReleased = newDataGame.yearReleased == nil ? nil : NSNumber(value: newDataGame.yearReleased!)
+            try ctx.save()
+        }
+        catch{
+            ctx.rollback()
+        }
+    }
+    
 }

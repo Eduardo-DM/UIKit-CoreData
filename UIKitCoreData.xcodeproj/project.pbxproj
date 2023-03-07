@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EA66C9029B5EB09002B7D71 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */; };
 		1EA7B3A1299D8957009D1AA4 /* DoneUIToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7B3A0299D8957009D1AA4 /* DoneUIToolBar.swift */; };
+		1EA9776129B652B800DABFFF /* CRUDGameUpdateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9776029B652B800DABFFF /* CRUDGameUpdateCommand.swift */; };
 		1EAA3E98299CDC26009B53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3E97299CDC26009B53C3 /* AppDelegate.swift */; };
 		1EAA3E9A299CDC26009B53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3E99299CDC26009B53C3 /* SceneDelegate.swift */; };
 		1EAA3E9F299CDC26009B53C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA3E9D299CDC26009B53C3 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		1EA7B3A0299D8957009D1AA4 /* DoneUIToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneUIToolBar.swift; sourceTree = "<group>"; };
+		1EA9776029B652B800DABFFF /* CRUDGameUpdateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDGameUpdateCommand.swift; sourceTree = "<group>"; };
 		1EAA3E94299CDC26009B53C3 /* UIKitCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAA3E97299CDC26009B53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EAA3E99299CDC26009B53C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				1EB972E229A76140000D1B81 /* CRUDGameOp.swift */,
 				1EB972E429A764CF000D1B81 /* CRUDGameOpInvoker.swift */,
 				1EB972E629A76569000D1B81 /* CRUDGameCreateCommand.swift */,
+				1EA9776029B652B800DABFFF /* CRUDGameUpdateCommand.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			files = (
 				1EAA3E98299CDC26009B53C3 /* AppDelegate.swift in Sources */,
 				1EA7B3A1299D8957009D1AA4 /* DoneUIToolBar.swift in Sources */,
+				1EA9776129B652B800DABFFF /* CRUDGameUpdateCommand.swift in Sources */,
 				1EB972E329A76140000D1B81 /* CRUDGameOp.swift in Sources */,
 				1EAA3ED0299CFA97009B53C3 /* Game.swift in Sources */,
 				1EACC51729A96CB3002E19CD /* ReadGameViewController.swift in Sources */,

@@ -50,6 +50,45 @@ final class CRUDGameOpTests: XCTestCase {
         gameTests.testGameInit()
     }
     
+    func testGetGameCoreData() throws{
+        
+        let cRUDGameOp = CRUDGameOp()
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game1, ctx: ctx))
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game2, ctx: ctx))
+        
+        let gameCoreData1 = try? cRUDGameOp.getGameCoreData(title: game1.title, ctx: ctx)
+        let gameCoreData2 = try? cRUDGameOp.getGameCoreData(title: game2.title, ctx: ctx)
+        
+        if let gameCoreData1 {
+            equals(gameCD: gameCoreData1, game: game1)
+        }
+        else{
+            XCTFail()
+        }
+        if let gameCoreData2 {
+            equals(gameCD: gameCoreData2, game: game2)
+        }
+        else{
+            XCTFail()
+        }
+        
+    }
+    
+    func testUpdateGameCoreData() throws{
+        
+        let cRUDGameOp = CRUDGameOp()
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game1, ctx: ctx))
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game2, ctx: ctx))
+        let game1CoreData = try cRUDGameOp.getGameCoreData(title: game1.title, ctx: ctx)!
+        let updatedGame = try Game(designer: "Uwe", complexity: .hard, targetAge: .babies, title: game1.title, yearReleased: "100")
+        
+        try cRUDGameOp.updateGameCoreData(gameCD: game1CoreData, newDataGame: updatedGame, ctx: ctx)
+        
+        let updatedGameCoreData = try XCTUnwrap(cRUDGameOp.getGameCoreData(title: game1.title, ctx: ctx))
+        equals(gameCD: updatedGameCoreData, game: updatedGame)
+        
+    }
+    
 /*
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

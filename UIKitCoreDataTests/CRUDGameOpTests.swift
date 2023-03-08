@@ -89,6 +89,18 @@ final class CRUDGameOpTests: XCTestCase {
         
     }
     
+    func testDeleteGameCoreData() throws{
+        let cRUDGameOp = CRUDGameOp()
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game1, ctx: ctx))
+        XCTAssertNoThrow(try cRUDGameOp.addGameEntityInCoreData(game: game2, ctx: ctx))
+        let game1CoreData = try cRUDGameOp.getGameCoreData(title: game1.title, ctx: ctx)!
+        
+        XCTAssertNoThrow(try cRUDGameOp.deleteGameCoreData(gameCD: game1CoreData, ctx:ctx))
+        
+        XCTAssertNoThrow(try cRUDGameOp.checkTitle(game1.title, ctx: ctx))
+        
+    }
+    
 /*
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

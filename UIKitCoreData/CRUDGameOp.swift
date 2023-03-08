@@ -63,4 +63,14 @@ struct CRUDGameOp {
         }
     }
     
+    func deleteGameCoreData(gameCD: Games, ctx: NSManagedObjectContext) throws{
+        ctx.delete(gameCD)
+        do {
+            try ctx.save()
+        }
+        catch {
+            ctx.rollback()
+        }
+    }
+    
 }

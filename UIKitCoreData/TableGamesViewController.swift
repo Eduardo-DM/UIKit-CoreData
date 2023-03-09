@@ -20,8 +20,15 @@ final class TableGamesViewController: UITableViewController, NSFetchedResultsCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        switch operation{
+        case .read:
+            self.navigationItem.title = "Read operation"
+        case .update:
+            self.navigationItem.title  = "Update operation"
+        case .none:
+            self.navigationItem.title = "CRUD"
+        }
         
         // Set up the fetch request
         let fetchRequest: NSFetchRequest<Games> = Games.fetchRequest()
@@ -148,7 +155,7 @@ final class TableGamesViewController: UITableViewController, NSFetchedResultsCon
             let indexPath = sender as? IndexPath {
             let gameFromCoreData = fetchedResultsController.object(at: indexPath)
             do {
-                destination.gameInScreen = try Game(gameCoreData: gameFromCoreData)
+                destination.initialValuesOfGame = try Game(gameCoreData: gameFromCoreData)
             }
             catch{
                 present(UIAlertController.showAlertOkNothing(title: "Unexpected error", message: "It was imposible recover information about the game, please try later."), animated: true, completion: nil)

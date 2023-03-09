@@ -20,7 +20,7 @@ final class TableGamesViewController: UITableViewController, NSFetchedResultsCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         switch operation{
         case .read:
             self.navigationItem.title = "Read operation"
@@ -82,6 +82,16 @@ final class TableGamesViewController: UITableViewController, NSFetchedResultsCon
         contentOfZeldaGame.text = "\(gameFromCoreData.title ?? "No title")"
         contentOfZeldaGame.secondaryText = "\(gameFromCoreData.designer ?? "Unassigned designer")"
         cell.contentConfiguration = contentOfZeldaGame
+        
+        switch operation{
+        case .read:
+            cell.accessoryType = .detailButton
+            self.navigationItem.title = "Read operation"
+        case .update:
+            cell.accessoryType = .disclosureIndicator
+        case .none:
+            cell.accessoryType = .none
+        }
 
         return cell
     }

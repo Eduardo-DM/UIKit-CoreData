@@ -426,12 +426,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-4R-CUx" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="20" y="205" width="213" height="259"/>
+                                <rect key="frame" x="20" y="205.00000000000003" width="390" height="258.66666666666674"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-Si-97A" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="213" height="259"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="258.66666666666669"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jMB-A3-OUo">
-                                            <rect key="frame" x="0.0" y="0.0" width="213" height="259"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="258.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Jo-gyQ">
@@ -474,7 +474,7 @@
                                                     </buttonConfiguration>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRUD operations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AH2-tb-Pjc">
-                                                    <rect key="frame" x="20" y="20" width="172.33333333333334" height="27"/>
+                                                    <rect key="frame" x="20" y="20" width="350" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -556,6 +556,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mm0-o9-pOw" secondAttribute="bottom" id="3Cf-RE-1am"/>
+                            <constraint firstItem="mnF-Zz-XgP" firstAttribute="trailing" secondItem="uNn-4R-CUx" secondAttribute="trailing" constant="20" id="9lr-rB-egJ"/>
                             <constraint firstItem="uNn-4R-CUx" firstAttribute="leading" secondItem="mnF-Zz-XgP" secondAttribute="leading" constant="20" id="9zv-Um-WHp"/>
                             <constraint firstItem="mm0-o9-pOw" firstAttribute="trailing" secondItem="ON4-SK-Zfl" secondAttribute="trailing" id="EBT-Vw-5WW"/>
                             <constraint firstItem="mm0-o9-pOw" firstAttribute="leading" secondItem="ON4-SK-Zfl" secondAttribute="leading" id="Q4b-3j-Mtr"/>
@@ -583,12 +584,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-bB-mqy" customClass="CustomUIView" customModule="UIKitCoreData" customModuleProvider="target">
-                                <rect key="frame" x="10" y="159" width="410" height="433"/>
+                                <rect key="frame" x="10" y="159.00000000000003" width="410" height="432.66666666666674"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-0n-LSZ" customClass="CustomUIVisualEffectView" customModule="UIKitCoreData" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="433"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="432.66666666666669"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZNX-zB-tLo">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="433"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="432.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Lb-hDz">
@@ -811,6 +812,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="HDc-NO-S1q">
                         <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

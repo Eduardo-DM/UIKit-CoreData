@@ -179,13 +179,13 @@
 				1EAA3E9D299CDC26009B53C3 /* Main.storyboard */,
 				1EB972DF29A7607D000D1B81 /* BusinessLogic */,
 				1EAA2332299DF2ED001EC660 /* Model */,
+				1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */,
 				1EAB1CFC299D1A57009929E4 /* CreateGameViewController.swift */,
 				1EACC51429A91399002E19CD /* TableGamesViewController.swift */,
 				1EACC51629A96CB3002E19CD /* ReadGameViewController.swift */,
 				1EBA496929B0E6AA0056D04B /* UpdateGameViewController.swift */,
 				1EAA2333299DF320001EC660 /* PersistanceCoreData */,
 				1EAA2331299DF2C7001EC660 /* CustomUIControl */,
-				1EA66C8F29B5EB09002B7D71 /* MainScreenViewController.swift */,
 			);
 			path = UIKitCoreData;
 			sourceTree = "<group>";
